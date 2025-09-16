@@ -157,3 +157,41 @@ body {
     line-height: 1.6;
 
 }
+
+
+
+/* 4. RESPONSIVIDADE - AJUSTE PARA TELAS PEQUENAS */
+
+@media (max-width: 600px) {
+
+    /*
+
+     * Quando a tela for menor que 600px, o layout deixa de ser lado a lado.
+
+     * A imagem vai para cima e o texto abaixo (flex-direction: column).
+
+     * Também centralizamos o texto para melhor leitura.
+
+     */
+
+    .post-card {
+
+        flex-direction: column; /* Imagem em cima, texto embaixo */
+
+        text-align: center;
+
+    }
+
+ 
+
+    .post-image {
+
+        /* A imagem agora ocupa toda a largura disponível */
+
+        width: 100%;
+
+        height: auto; /* Ajusta altura automaticamente */
+
+    }
+
+}
